@@ -9,7 +9,8 @@ elevator requests to a set of available elevators.
 
 ### Design
 
-The design is supposed to separate into 2 main pieces:  
+The design is supposed to separate into 2 main pieces:
+
 1. Book keeping of available elevators (`ElevatorControlSystem`)
 2. Scheduling of an elevator request to an available elevator (`ElevatorScheduler`)
 
