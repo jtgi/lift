@@ -40,6 +40,8 @@ The design is supposed to separate into 2 main pieces:
 <start_floor> <end_floor> (num_requests times)
 ```
 
+**Only supported scheduler**: `FirstComeFirstServeScheduler`
+
 **Sample Input**
 ```
 2 3 FirstComeFirstServeScheduler
