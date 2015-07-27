@@ -9,7 +9,7 @@ elevator requests to a set of available elevators.
 
 ### Design
 
-The design is supposed to separate into 2 main pieces:
+The design is supposed to separate into 2 main pieces:  
 1. Book keeping of available elevators (`ElevatorControlSystem`)
 2. Scheduling of an elevator request to an available elevator (`ElevatorScheduler`)
 
@@ -68,5 +68,6 @@ Allocation History =======
 - Spent too much time on design; didn't get to do any of the fun scheduling algorithms :(
 - Not as clear separation between elevator movement and scheduling as I would like.
   - Right now schedule must be given carefully to elevator and trusted that it follows the way you'd like.
-- Need a better approach to dealing with the simulation. How to test/run a real workload.
+- Need a better approach to dealing with the simulation. How to test/run a real workload. Right now all requests
+are frontloaded, scheduler basically gets farthest in the future look at the world.
 - Didn't get to add metrics for utilization, avg. wait, avg completion, requests completed per step
