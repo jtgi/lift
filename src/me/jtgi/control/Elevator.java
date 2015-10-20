@@ -40,7 +40,7 @@ public class Elevator {
         status = Status.PICKUP;
         targetFloor = currentRequest.getStartFloor();
       } else {
-        status = Status.OCCUPIED;
+        status = Status.PICKUP;   // seeded  status = Status.OCCUPIED;
         targetFloor = currentRequest.getEndFloor();
       }
     }
